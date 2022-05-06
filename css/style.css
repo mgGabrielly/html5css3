@@ -7,7 +7,19 @@
 }
 
 body {
-  background-color: #9E2731;
+  background-color: #FFFFFF;
+}
+
+.html5 {
+  background-color: #E44D26;
+}
+
+.css3 {
+  background-color: #264DE4;
+}
+
+.javascript {
+  background-color: #E5A228;
 }
 
 @media (min-width: 576px) {
@@ -30,7 +42,7 @@ body {
 
 @media (min-width: 1200px) {
   body {
-    background-color: #7ADC54;
+    background-color: #FFFFFF;
   }
 }
 /*# sourceMappingURL=style.css.map */
