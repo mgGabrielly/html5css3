@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #9E2731;
+}
+
+@media (min-width: 576px) {
+  body {
+    background-color: #D41314;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-color: #C75413;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    background-color: #F8CA2E;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-color: #7ADC54;
+  }
+}
+/*# sourceMappingURL=style.css.map */
