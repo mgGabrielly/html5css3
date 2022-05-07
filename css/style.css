@@ -6,6 +6,10 @@
           box-sizing: border-box;
 }
 
+* h1, * h2, * h3, * p {
+  margin-bottom: 0.8em;
+}
+
 body {
   background-color: #FFFFFF;
 }
@@ -20,6 +24,129 @@ body {
 
 .javascript {
   background-color: #E5A228;
+}
+
+.flex-contanier-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-contanier-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main, section {
+  height: 75vw;
+  text-align: center;
+  overflow: hidden;
+}
+
+#Destaque {
+  background: url();
+  background-position: center;
+}
+
+#HTML {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(228, 77, 38, 0.8)), to(rgba(241, 101, 41, 0.8)));
+  background: linear-gradient(90deg, rgba(228, 77, 38, 0.8) 0%, rgba(241, 101, 41, 0.8) 100%);
+}
+
+.menu {
+  background-color: #000000;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #FFFFFF;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.menu a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+
+.menu li {
+  margin: 10px;
+}
+
+.destaqueHTML {
+  color: #E44D26;
+}
+
+.destaqueCSS {
+  color: #264DE4;
+}
+
+.destaqueJS {
+  color: #E5A228;
+}
+
+.botao {
+  background: #000000;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 200px;
+  font-weight: 900;
+}
+
+@media (orietation: landscape) {
+  #Destaque {
+    background-size: 110vW;
+  }
+}
+
+@media (orietation: portrait) {
+  #Destaque {
+    background-size: 200vw;
+  }
+}
+
+@media (min-width: 0) {
+  #logo {
+    width: 100px;
+    height: 100px;
+  }
+  .menu {
+    height: 50px;
+  }
+  .menu ul {
+    height: 50px;
+  }
 }
 
 @media (min-width: 576px) {
