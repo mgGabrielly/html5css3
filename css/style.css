@@ -10,22 +10,6 @@
   margin-bottom: 0.8em;
 }
 
-body {
-  background-color: #FFFFFF;
-}
-
-.html5 {
-  background-color: #E44D26;
-}
-
-.css3 {
-  background-color: #264DE4;
-}
-
-.javascript {
-  background-color: #E5A228;
-}
-
 .flex-contanier-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,27 +46,11 @@ body {
           align-items: center;
 }
 
-.main, section {
-  height: 75vw;
-  text-align: center;
-  overflow: hidden;
-}
-
-#Destaque {
-  background: url();
-  background-position: center;
-}
-
-#HTML {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(228, 77, 38, 0.8)), to(rgba(241, 101, 41, 0.8)));
-  background: linear-gradient(90deg, rgba(228, 77, 38, 0.8) 0%, rgba(241, 101, 41, 0.8) 100%);
-}
-
 .menu {
-  background-color: #000000;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: #000000;
   color: #FFFFFF;
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -92,6 +60,7 @@ body {
 .menu a {
   color: #FFFFFF;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .menu ul {
@@ -100,6 +69,107 @@ body {
 
 .menu li {
   margin: 10px;
+}
+
+.section-details {
+  width: 70vw;
+  padding: 3vw;
+}
+
+.section-details p {
+  text-align: justify;
+  text-indent: 3em;
+}
+
+.alinharTop {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.listaDeLinks {
+  width: 30vw;
+}
+
+.listaDeLinks ul {
+  list-style-type: none;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.listaDeLinks li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.listaDeLinks img {
+  width: 50px;
+  height: 50px;
+  border: 1px;
+}
+
+.listaDeLinks a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #000000;
+}
+
+main, section {
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  border: 1px;
+}
+
+#Destaque {
+  background: url(/img/img/Destaque_o20.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#HTML {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(228, 77, 38, 0.8)), to(rgba(241, 101, 41, 0.8)));
+  background: linear-gradient(90deg, rgba(228, 77, 38, 0.8) 0%, rgba(241, 101, 41, 0.8) 100%);
+}
+
+#CSS {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(38, 77, 228, 0.8)), to(rgba(41, 101, 241, 0.8)));
+  background: linear-gradient(90deg, rgba(38, 77, 228, 0.8) 0%, rgba(41, 101, 241, 0.8) 100%);
+}
+
+#JavaScript {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(229, 162, 40, 0.8)), to(rgba(241, 191, 38, 0.8)));
+  background: linear-gradient(90deg, rgba(229, 162, 40, 0.8) 0%, rgba(241, 191, 38, 0.8) 100%);
+}
+
+#LinksUteis {
+  background: -webkit-gradient(linear, left top, right top, from(#BBBBBB), to(#DDDDDD));
+  background: linear-gradient(90deg, #BBBBBB 0%, #DDDDDD 100%);
+}
+
+.botao {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 10px;
+  border-radius: 15px;
+  text-decoration: none;
+  width: 200px;
+  font-weight: 900;
 }
 
 .destaqueHTML {
@@ -114,23 +184,19 @@ body {
   color: #E5A228;
 }
 
-.botao {
-  background: #000000;
-  color: #FFFFFF;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 10px;
-  width: 200px;
-  font-weight: 900;
-}
-
-@media (orietation: landscape) {
+@media (orientation: landscape) {
   #Destaque {
-    background-size: 110vW;
+    background-size: 110vw;
+  }
+  #InverterFlexBox {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
 }
 
-@media (orietation: portrait) {
+@media (orientation: portrait) {
   #Destaque {
     background-size: 200vw;
   }
@@ -149,21 +215,42 @@ body {
   }
 }
 
-@media (min-width: 576px) {
-  body {
-    background-color: #D41314;
+@media (min-width: 576px) and (orientation: portrait) {
+  #logo {
+    width: 200px;
+    height: 200px;
+  }
+  .menu {
+    height: 100px;
+  }
+  .menu ul {
+    height: 100px;
   }
 }
 
 @media (min-width: 768px) {
-  body {
-    background-color: #C75413;
+  #logo {
+    width: 200px;
+    height: 200px;
+  }
+  .menu {
+    height: 100px;
+  }
+  .menu ul {
+    height: 100px;
   }
 }
 
 @media (min-width: 992px) {
-  body {
-    background-color: #F8CA2E;
+  #logo {
+    width: 260px;
+    height: 260px;
+  }
+  .menu {
+    height: 130px;
+  }
+  .menu ul {
+    height: 130px;
   }
 }
 

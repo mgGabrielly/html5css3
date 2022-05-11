@@ -7,84 +7,179 @@
     <title>Aprenda HTML5, CSS3 e JavaScript</title>
     <meta name="description" content="Site criado com finalidades educacionais para ensinar HTML5, CSS3 e JavaScript, três tecnologias fundamentais da WEB.">
     <meta name="keywords" content="HTML, CSS, JavaScript">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_package_v0.16/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_package_v0.16/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_package_v0.16/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon_package_v0.16/site.webmanifest">
-    <link rel="mask-icon" href="img/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-----Cabeçalho - logo e menu------>
+    <!-----Logo e menu------>
     <header class="flex-contanier-row menu">
-            <img src="img/favicon_package_v0.16/favicon.png" alt="Logo do site">
-            <ul class="flex-contanier-row{">
+            <img src="img/img/favicon.png" alt="Logo do site" id="logo">
+            <ul class="flex-contanier-row">
                 <li><a href="#HTML">HTML</a></li>
-                <li><a href="#">CSS</a></li>
-                <li><a href="#">JavaScript</a></li>
-                <li><a href="#">Links Úteis</a></li>
+                <li><a href="#CSS">CSS</a></li>
+                <li><a href="#JavaScript">JavaScript</a></li>
+                <li><a href="#LinksUteis">Links Úteis</a></li>
             </ul>
     </header>
     <main id="Destaque" class="flex-contanier-column">
-        <h1>Aprenda <mark class="destaqueHTML">HTML5</mark>, <mark class="destaqueCSS">CSS3</mark> e <mark class="destaqueJS">JavaScript</mark></h1>
-        <h2>Escrever com <mark class="destaqueHTML">semântica</mark>!</h2>
-        <h2>Aplicar estilos <mark class="destaqueCSS">modernos</mark>!</h2>
-        <h2>Obter uma melhor <mark class="destaqueJS">interação</mark>!</h2>
+        <h1>Aprenda <em class="destaqueHTML">HTML5</em>, <em class="destaqueCSS">CSS3</em> e <em class="destaqueJS">JavaScript</em></h1>
+        <h2>Escrever com <em class="destaqueHTML">semântica</em>!</h2>
+        <h2>Aplicar <em class="destaqueCSS">estilos</em> modernos!</h2>
+        <h2>Obter uma melhor <em class="destaqueJS">interação</em>!</h2>
     </main>
-    <section class="html5">
-        <img src="img/favicon_package_v0.16/img-logos-001/img/HTML5.png" alt="Logo do HTML5">
-        <h2>HTML5</h2>
-        <h3>A HTML é a linguagem principal da web</h3>
-        <p>A HTML5 modifica a forma como escrevemos código e organizamos a informação na página. Seria mais semântica com menos código. Seria mais interatividade sem a necessidade de instalação de plugins e perda de performance. É a criação de código interoperável, pronto para futuros dispositivos e que facilita a reutilização da informação de diversas formas.
-        </p>
-        <a href="#" class="botao">Saiba mais</a>
+    <!---HTML-->
+    <section id="HTML" class="flex-container-column">
+        <div class="flex-container-row"> 
+            <div class="flex-container-column section-details">
+                <img src="img/img/HTML5.png" alt ="Logo do HTML5">
+                <h2>HTML5</h2>
+                <h3>A HTML é a linguagem principal da web</h3>
+                <p>A HTML5 modifica a forma como escrevemos código e organizamos a informação na página. Seria mais semântica com menos código. Seria mais interatividade sem a necessidade de instalação de plugins e perda de performance. É a criação de código interoperável, pronto para futuros dispositivos e que facilita a reutilização da informação de diversas formas.
+                </p>
+                <a href="https://www.w3schools.com/html/default.asp" target="_blank"  class="botao">Saiba mais</a>
+            </div>
+        </div>
     </section>
-    <section class="css3">
-        <img src="img/favicon_package_v0.16/img-logos-001/img/CSS3.png" alt="Logo do CSS3">
-        <h2>CSS3</h2>
-        <h3>O CSS complementa o HTML</h3>
-        <p>CSS é uma linguagem de estilo, também conhecida como folhas de estilo em cascata. É usada para personalização visual de um site. Ou seja, elas servem para otimizar o conteúdo das páginas e permitir uma apresentação mais amigável para o usuário.
-        </p>
-        <a href="#" class="botao">Saiba mais</a>
+    <!--CSS3-->
+    <section id="CSS" class="flex-container-column">
+        <div class="flex-container-row" id="InverterFlexBox">
+            <div class="flex-container-column section-details">
+                <img src="img/img/CSS3.png" alt="Logo do CSS3">
+                <h2>CSS3</h2>
+                <h3>O CSS complementa o HTML</h3>
+                <p>CSS é uma linguagem de estilo, também conhecida como folhas de estilo em cascata. É usada para personalização visual de um site. Ou seja, elas servem para otimizar o conteúdo das páginas e permitir uma apresentação mais amigável para o usuário.
+                </p>
+                <a href="https://www.w3schools.com/css/default.asp" target="_blank" class="botao">Saiba mais</a>
+            </div>
+        </div>
     </section>
-    <section class="javascript">
-        <img src="img/favicon_package_v0.16/img-logos-001/img/JS.png" alt="Logo do JavaScript">
-        <h2>JavaScript</h2>
-        <h3>Com a HTML e o CSS, o JavaScript é uma das três principais tecnologias da web</h3>
-        <p>O JavaScript é uma linguagem baseada em protótipos, multi-paradigma e dinâmica, suportando estilos de orientação a objetos, imperativos e declarativos (como por exemplo a programação funcional).
-        </p>
-        <a href="#" class="botao">Saiba mais</a>
+    <!---JavaScript-->
+    <section id="JavaScript" class="flex-container-column">
+        <div class="flex-container-row ">
+            <div class="flex-container-column section-details">
+                <img src="img/img/JS.png" alt="Logo do JavaScript">
+                <h2>JavaScript</h2>
+                <h3>Com a HTML e o CSS, o JavaScript é uma das três principais tecnologias da web</h3>
+                <p>O JavaScript é uma linguagem baseada em protótipos, multi-paradigma e dinâmica, suportando estilos de orientação a objetos, imperativos e declarativos (como por exemplo a programação funcional).
+                </p>
+                <a href="https://www.w3schools.com/js/default.asp" target="_blank" class="botao">Saiba mais</a>
+            </div>
+        </div>
     </section>
+    <!--Links Úteis-->
     <section>
-        <h2>Links Úteis</h2>
-        <h3>Planejamento</h3>
-        <ul>
-            <li><a href="https://www.figma.com/">Figma</a></li>
-            <li><a href="https://fonts.google.com/">Google Fonts</a></li>
-            <li><a href="https://home.unicode.org/">unicode.org</a></li>
-            <li><a href="https://realfavicongenerator.net/">Favicon Generator</a></li>
-            <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
-        </ul>
-        <h3>Programação</h3>
-        <ul>
-            <li><a href="https://git-scm.com/">Git</a></li>
-            <li><a href="https://github.com/">Github</a></li>
-            <li><a href="https://code.visualstudio.com/">VS Code</a></li>
-            <li><a href="https://nodejs.org/en/">Node.js</a></li>
-        </ul>
-        <h3>Ajuda</h3>
-        <ul>
-            <li><a href="https://www.w3.org/">W3C</a></li>
-            <li><a href="https://validator.w3.org/">Validador HTML</a></li>
-            <li><a href="https://jigsaw.w3.org/css-validator/">Validador CSS</a></li>
-            <li><a href="https://www.w3c.br/">W3C Brasil</a></li>
-            <li><a href="https://www.w3schools.com/">W3schools</a></li>
-        </ul>
+        <section id="LinksUteis" class = "flex-container-column">
+            <h2>Links Úteis</h2>
+            <div class = "flex-container-row" class="alinharTop">
+                <div class="listaDeLinks">
+                    <h3>Planejamento</h3>
+                    <ul class = "flex-container-column">
+                        <li class = "flex-container-row">
+                            <img src="img/img/Figma_icon.png" alt="Logo do Figma">
+                            <a href="https://www.figma.com/" target="_blank" rel="nofollow">Figma</a>
+                        </li>
+    
+                        <li class = "flex-container-row">
+                            <img src="img/img/Google_icon.png" alt="Logo do Google Fonts">
+                            <a href="https://fonts.google.com/" target="_blank" rel="nofollow">Google Fonts</a>
+                        </li>
+    
+                        <li class = "flex-container-row">
+                            <img src="img/img/Unicode_icon.png" alt="Logo do unicode.org">
+                            <a href="https://home.unicode.org/" target="_blank" rel="nofollow">unicode.org</a>
+                        </li>
+    
+                        <li class = "flex-container-row">
+                            <img src="img/img/Realfavicongenerator_icon.png" alt="Logo do Real Favicon Generator">
+                            <a href="https://realfavicongenerator.net/" target="_blank" rel="nofollow">Favicon Generator</a>
+                        </li>
+                        <li class = "flex-container-row">
+                            <img src="img/img/Bootstrap_icon.png" alt="Logo do Bootstrap">
+                            <a href="https://getbootstrap.com/" target="_blank" rel="nofollow">Bootstrap</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="listaDeLinks">
+                    <h3>Programação</h3>
+                    <ul class = "flex-container-column">
+                        <li class = "flex-container-row">
+                            <img src="img/img/Git_icon.png" alt="Logo do Git">
+                            <a href="https://git-scm.com/" target="_blank" rel="nofollow">Git</a>
+                        </li>
+                        <li class = "flex-container-row">
+                            <img src="img/img/Github_icon.png" alt="Logo do Github">
+                            <a href="https://github.com/" target="_blank" rel="nofollow">Github</a>
+                        </li>
+                        <li class = "flex-container-row">
+                            <img src="img/img/Visual_Studio_Code_icon.png" alt="Logo do Visual Studio Code">
+                            <a href="https://code.visualstudio.com/" target="_blank" rel="nofollow">VS Code</a>
+                        </li>
+                        <li class = "flex-container-row">
+                            <img src="img/img/Node.js_icon.png" alt="Logo do Node.js">
+                            <a href="https://nodejs.org/en/" target="_blank" rel="nofollow">Node.js</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="listaDeLinks">
+                    <h3>Ajuda</h3>
+                    <ul class = "flex-container-column">
+                        <li class = "flex-container-row">
+                            <img src="img/img/W3C_Brasil_icon.png" alt="Logo do W3C">
+                            <a href="https://www.w3.org/" target="_blank" rel="nofollow">W3C</a>
+                        </li>
+                        <li class = "flex-container-row">
+                            <img src="img/img/W3C_icon.png" alt ="Logo do W3C">
+                            <a href="https://validator.w3.org/" target="_blank" rel="nofollow">Validador HTML</a>
+                        </li>
+                        <li class = "flex-container-row">
+                            <img src="img/img/W3C_icon.png" alt="Logo do W3C">
+                            <a href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="nofollow">Validador CSS</a>
+                        </li>
+                        <li class = "flex-container-row">
+                            <img src="img/img/W3C_Brasil_icon.png" alt="Logo do W3C">
+                            <a href="https://www.w3c.br/" target="_blank" rel="nofollow">W3C Brasil</a>
+                        </li>
+                        <li class = "flex-container-row"> 
+                            <img src="img/img/W3Schools_icon.png" alt="Logo do W3schools">
+                            <a href="https://www.w3schools.com/" target="_blank" rel="nofollow">W3schools</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
     </section>
+    <!---Rodapé-->
     <footer>
-        <small>© 2022 - Maria Gabrielly</small>
+        <p>© 2022 - Maria Gabrielly</p>
+        <ul>
+            <li>
+                <a href="https://www.whatsapp.com/?lang=pt_br" target="_blank" rel="nofollow">
+                <img src="img/img/WhatsApp_icon.png" alt="Logo do WhatsApp"></a>
+            </li>
+            <li>
+                <a href="mailto:ggabrielly.ggaby@gmail.com//" target="_blank" rel="nofollow">
+                <img src="img/img/Gmail_icon.png" alt="Logo do Gmail"></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank" rel="nofollow">
+                <img src="img/img/YouTube_icon.png" alt="Logo do YouTube"></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/" target="_blank" rel="nofollow">
+                <img src="img/img/Facebook_icon.png" alt="Logo do Facebook"></a>
+             </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank" rel="nofollow">
+                <img src="img/img/Instagram_icon.png" alt="Logo do Instagram"></a>
+            </li>
+        </ul>
     </footer>
 
 </body>

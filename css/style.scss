@@ -21,7 +21,7 @@ $breakpoints: (
   md: 768px,	//Tablets em modo paisagem
   lg: 992px,	//Desktops
   xl: 1200px,   //Desktops com alta definição HD e FHD
-  xxl: 2000px   //Desktops com ultra alta definição QHD e UHD
+  xxl: 2000px   //Desktops com ultra alta definição
 );
 
 $colorsLikert: (
@@ -44,20 +44,6 @@ $colorsLikert: (
     }
 }
 
-
-body{
-    background-color: $backgroundDefaultColor;
-}
-.html5{
-    background-color: $primaryHtmlColor;
-}
-.css3{
-    background-color: $primaryCssColor;
-}
-.javascript{
-    background-color: $primaryJsColor;
-}
-
 .flex-contanier-row{
     display: flex;
     flex-direction: row;
@@ -74,108 +60,196 @@ body{
     align-items: center;
 }
 
-.main, section{
-    height: 75vw;
-    text-align: center;
-    overflow: hidden;
-}
-//terminar
-#Destaque{
-    background: url();
-   background-position: center;
-   
-}
-
-#HTML{
-    background: $gradienteHTML;
-}
-
-.menu{
-    background-color: $fontDefaultColor;
+.menu {
     justify-content: space-between;
+    background-color: $backgroundSecondaryColor;
     color: $fontSecondaryColor;
     align-items: flex-start;
-    a{
+    a {
         color: $fontSecondaryColor;
         text-decoration: none;
+        font-weight: bold;
     }
-    ul{
+    ul {
         list-style-type: none;
     }
-    li{
+    li {
         margin: 10px;
     }
 }
 
-.destaqueHTML{
-    color: $primaryHtmlColor;
+.section-details {
+    width: 70vw;
+    padding: 3vw;
+    p{
+      text-align: justify;  
+      text-indent: 3em;
+    }
 }
 
-.destaqueCSS{
-    color: $primaryCssColor;
+.alinharTop{
+    align-items: flex-start;
 }
 
-.destaqueJS{
-    color: $primaryJsColor;
+.listaDeLinks{
+    
+    width: 30vw;
+    ul {
+        list-style-type: none;
+        align-items: flex-start;
+    }
+    li{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    img{
+        width: 50px;
+        height: 50px;
+        border: 1px;
+    }
+    a{
+        margin: 0 20px;
+        text-decoration: none;
+        color: $fontDefaultColor;
+    }
 }
 
-.botao{
-    background: $fontDefaultColor;
+main, section {
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    border: 1px;
+}
+
+#Destaque {
+    background: url(/img/img/Destaque_o20.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#HTML {
+    background: $gradienteHTML;
+}
+
+#CSS {
+    background: $gradienteCSS;
+}
+
+#JavaScript {
+    background: $gradienteJS;
+}
+
+#LinksUteis {
+    background: $gradienteLinks;
+}
+
+.botao {
+    background-color: $backgroundSecondaryColor;
     color: $fontSecondaryColor;
+    padding: 10px;
+    border-radius: 15px;
     text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 10px;
     width: 200px;
     font-weight: 900;
 }
 
-@media(orietation: landscape){
-    #Destaque{
-        background-size: 110vW;
-    }
+.destaqueHTML {
+    color: $primaryHtmlColor;
 }
 
-@media(orietation: portrait){
-    #Destaque{
+.destaqueCSS {
+    color: $primaryCssColor;
+
+}
+
+.destaqueJS {
+    color: $primaryJsColor;
+}
+
+
+@media (orientation: landscape) {
+    #Destaque {
+        background-size: 110vw;
+    }
+    #InverterFlexBox{
+        flex-direction: row-reverse;
+    }
+}
+@media (orientation: portrait) {
+    #Destaque {
         background-size: 200vw;
     }
 }
-//SSmartphone em modo retrato
-@media(min-width: map-get($breakpoints, xs)){
-    #logo{
+
+//Smartphones em modo retrato
+@media (min-width: map-get($breakpoints, xs)) {
+    #logo {
         width: 100px;
         height: 100px;
     }
     .menu{
         height: 50px;
-        ul{
+        ul {
             height: 50px;
         }
+    }   
+}
+//Smartphones em modo paisagem
+@media (min-width: map-get($breakpoints, sm)) and (orientation: landscape) {
+
+}
+//Tablets em modo retrato
+@media (min-width: map-get($breakpoints, sm)) and (orientation: portrait) {
+    #logo {
+        width: 200px;
+        height: 200px;
     }
-} 
-//Smartphone em modo paisagem ou Tablet
-@media (min-width: 576px) {
-    body{
-        background-color: #D41314;
+    .menu{
+        height: 100px;
+        ul {
+            height: 100px;
+        }
     }
 }
-//Tablet em modo paisagem
-@media (min-width: 768px) {
-    body{
-        background-color: #C75413;
+
+//Tablets em modo paisagem
+@media (min-width: map-get($breakpoints, md)) {
+    #logo {
+        width: 200px;
+        height: 200px;
+    }
+    .menu{
+        height: 100px;
+        ul {
+            height: 100px;
+        }
     }
 }
+
 //Desktops
-@media (min-width: 992px) {
-    body{
-        background-color: #F8CA2E;
+@media (min-width: map-get($breakpoints, lg)) {
+    #logo {
+        width: 260px;
+        height: 260px;
+    }
+    .menu{
+        height: 130px;
+        ul {
+            height: 130px;
+        }
     }
 }
+
 //Desktops com alta definição
-@media (min-width: 1200px) {
+@media (min-width: map-get($breakpoints, xl)) {
     body{
         background-color: $backgroundDefaultColor;
     }
 }
+
 
 
